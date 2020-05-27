@@ -4,6 +4,8 @@
 FROM debian:buster-slim
 LABEL MAINTAINER="peter@linuxcontainers.io"
 
+ENV DEBIAN_FRONTEND noninteractive
+
 # files and scripts needed to build the image
 #
 RUN \
