@@ -2,19 +2,26 @@
 # Dockerfile
 #
 FROM debian:buster-slim
-LABEL MAINTAINER="peter@linuxcontainers.io"
+
+LABEL maintainer="Peter <peter@linuxcontainers.io>" \
+    architecture="amd64/x86_64" \
+    debian-version="10.7" \
+    build=$BUILD_DATE \
+    org.opencontainers.image.title="debian" \
+    org.opencontainers.image.description="Docker image running on Debian-Slim Linux" \
+    org.opencontainers.image.authors="Peter <peter@linuxcontainers.io>" \
+    org.opencontainers.image.vendor="Peter" \
+    org.opencontainers.image.version="v10.7" \
+    org.opencontainers.image.url="https://hub.docker.com/r/linuxcontainers/buster-slim/" \
+    org.opencontainers.image.created=$BUILD_DATE
 
 ENV DEBIAN_FRONTEND noninteractive
 
 # files and scripts needed to build the image
 #
-RUN \
-    apt-get update && \
-    apt-get upgrade && \
-    apt-get install -y --no-install-recommends \
-        locales=2.28-10 && \
-    echo "en_GB.UTF-8 UTF-8" >> /etc/locale.gen && \
-    locale-gen en_GB.utf8 && \
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install apt-utils -y && \
     apt-get clean -y && \
     apt-get autoremove -y && \
     apt-get autoclean -y && \
