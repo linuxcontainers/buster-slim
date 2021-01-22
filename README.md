@@ -5,7 +5,7 @@
 [![Docker Stars](https://img.shields.io/docker/stars/linuxcontainers/buster-slim.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/buster-slim/)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/linuxcontainers/buster-slim/latest?logo=docker&style=for-the-badge)
 
-[![Debian Version](https://img.shields.io/badge/Debian%20version-10.4-green.svg?style=for-the-badge)](https://buster-slimlinux.org/)
+[![Debian Version](https://img.shields.io/badge/Debian%20version-10.7-green.svg?style=for-the-badge)](https://buster-slimlinux.org/)
 
 This Docker image [(linuxcontainers/buster-slim)](https://hub.docker.com/r/linuxcontainers/buster-slim/) is based on the minimal [Debian Slim Linux](https://hub.docker.com/_/debian).
 
