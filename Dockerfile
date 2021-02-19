@@ -5,13 +5,13 @@ FROM debian:buster-slim
 
 LABEL maintainer="Peter <peter@linuxcontainers.dev>" \
     architecture="amd64/x86_64" \
-    debian-ver.devn="10.7" \
+    debian-ver.devn="10.8" \
     build=$BUILD_DATE \
     org.opencontainers.image.title="debian" \
     org.opencontainers.image.descrip.devn="Docker image running on Debian-Slim Linux" \
     org.opencontainers.image.authors="Peter <peter@linuxcontainers.dev>" \
     org.opencontainers.image.vendor="Peter" \
-    org.opencontainers.image.ver.devn="v10.7" \
+    org.opencontainers.image.ver.devn="v10.8" \
     org.opencontainers.image.url="https://hub.docker.com/r/linuxcontainers/buster-slim/" \
     org.opencontainers.image.created=$BUILD_DATE
 
